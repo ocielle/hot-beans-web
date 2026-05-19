@@ -1,0 +1,689 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /*change the background and the font*/
+  margin: 0;
+  background-color: #F3F5F7;
+  font-family: 'Archivo';
+  /*automatically change font to archivo*/
+}
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 100px;
+}
+
+/*change the font for header only*/
+.hh1 {
+  font-family: 'Archivo Black';
+  font-size: 42px;
+  color: #313030;
+  margin: 10px 0px;
+  padding-bottom: 5px;
+}
+
+.ph1 { /*the subtitle under the join bit*/
+  font-family: 'Archivo Narrow';
+  font-size: 26px;
+  color: #3B3A3A;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.ph2 {
+  font-size: 18px;
+  color: #5D5D5D;
+  margin: 0px;
+  padding-top: 5px;
+  margin-bottom: 20px;
+}
+
+.navbar { /*navigation bar*/
+  overflow: hidden; /*to make the nav stick at the top*/
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 40;
+  padding: 5px;
+  /* From https://css.glass - to make it looks like glass */
+  background: rgba(139, 151, 153, 0.34);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.4px);
+  -webkit-backdrop-filter: blur(14.4px);
+}
+
+.navbar a { /*to delete the underline and 'blue' colours*/
+  text-decoration: none;
+  color: #333;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #b0bec0;
+  color: black;
+}
+
+.left {
+  max-width: 600px;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+}
+
+.hire {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #d9d9d9;
+  padding: 10px 6px;
+  border-radius: 18px;
+  font-size: 14px;
+  color: #5D5D5D;
+  margin-bottom: 20px;
+  margin-left: -80px;
+}
+
+.hire:hover {
+  background-color: #57999A;
+  color: white;
+  transition: 0.3s;
+}
+
+.cta {
+  /*explore career button*/
+  text-decoration: none;
+  margin-top: 10px;
+  background-color: #5AA6A6;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.cta:hover {
+  /*change colour on mouse over*/
+  background-color: #478E8E;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+}
+
+.avatar img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px white;
+  margin-left: -10px;
+}
+
+.join {
+  /*text below the avatar*/
+  margin-top: 12px;
+  background-color: #96a0aa;
+  color: white;
+  padding: 10px 6px;
+  font-size: 13px;
+  border-radius: 18px;
+}
+
+/*end of 'home' section*/
+
+.about {
+  text-align: center;
+  padding: 100px 80px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #6F7D63;
+  margin-bottom: -25px;
+}
+
+.title {
+  font-size: 25px;
+  font-family: 'Archivo Black';
+  color: #5D5D5D;
+  margin-bottom: 60px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.card {
+  width: 280px;
+  padding: 30px 25px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.cards h3 {
+  margin: 15px 0 10px;
+  font-size: 18px;
+}
+
+.cards p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.light {
+  background-color: #CAEDEE;
+}
+
+.medium {
+  background-color: #AFE0E0;
+}
+
+.dark {
+  background-color: #87C4C5;
+}
+
+.icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  background-color: #3C6E71;
+  color: white;
+}
+
+.abt-stats {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat h4 {
+  font-size: 32px;
+  margin: 0;
+  color: #4A4A4A;
+}
+
+.stat p {
+  font-size: 14px;
+  color: #777;
+}
+
+/*end of 'about' section*/
+
+.team {
+  padding: 100px 80px;
+  background-color: #FAF8F3;
+}
+
+.team-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.meet {
+  font-size: 20px;
+  color: #6F7D63;
+  margin-bottom: -35px;
+}
+
+.star {
+  font-size: 40px;
+  font-family: 'Archivo Black', sans-serif;
+  color: #454343;
+  margin-bottom: -20px;
+}
+
+.rdes { /*right desciption*/
+  text-align: right;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #454343;
+  margin-bottom: 50px;
+}
+
+.team-cards { /**cards layout**/
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.team-card { /**card individual**/
+  background-color: #b4c4ca;
+  border-radius: 20px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover { /*to make the card looks bigger*/
+	transform: translateY(-10px);
+  
+}
+
+.teamcard {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px; 
+}
+
+.team-card h3 {
+  color: #313030;
+  margin-bottom: -20px;
+}
+
+.team-card h5 {
+  color: #6F7D63;
+  margin-bottom: -10px;
+}
+
+.team-card p {
+  font-family: 'Archivo Narrow';
+  font-size: 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.tags span {
+  background-color: #7A7A7A;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+/*end of team section*/
+
+.open {
+  text-align: center;
+  font-family: 'Archivo Black';
+  font-size: 46px;
+  color: #212122;
+  margin-bottom: 5px;
+}
+
+.role {
+  text-align: center;
+  font-size: 16px;
+  color: #3C6E71;
+  margin-bottom: 50px;
+}
+ 
+.job-card { /*card*/
+  max-width: 900px;
+  margin: 0 auto 80px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.frontend { /**header**/
+  font-family: 'Archivo Black';
+  font-size: 25px;
+  color: #4D4B4B;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: -25px;
+}
+
+.full { /**badge**/
+  display: inline-block;
+  color: #ffffff;
+  font-family: 'Archivo Black';
+  background-color: #5AA6A6;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+.subtitle-job { /*job info row*/
+  display: flex;
+  gap: 150px;
+  margin-top: -30px;
+  color: #919090;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 30px 0;
+}
+
+.job-content { /*main content*/
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.key-left { /*left column*/
+  flex: 2;
+}
+
+.job-title {
+  font-family: 'Archivo Black';
+  display: flex;
+  gap: 120px;
+  margin-top: 5px;
+  color: #313030;
+}
+
+.title-key {
+  font-family: 'Archivo Black';
+  font-size: 20px;
+  color: #313030;
+  margin-bottom: -10px;
+}
+
+.subtitle.key { 
+  list-style: none;
+  padding: 0;
+}
+
+.ul { /*lists*/
+  list-style-image: url('check.png');
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+ul li { /*space between each lists*/
+  margin-bottom: 10px;
+  color: #313030;
+}
+
+.key-right {
+  flex: 1;
+  text-align: center;
+}
+
+.apply { /*button*/
+  font-family: 'Archivo Black';
+  background-color: #3C6E71;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  margin-top: 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.apply:hover {
+  opacity: 0.9;
+}
+
+.deadline {
+  font-family: 'Archivo Narrow';
+  margin-top: 15px;
+  font-size: 15px;
+  color: #3B3A3A;
+}
+
+/*another job specifications*/
+
+.backend-title {
+  font-family: 'Archivo Black';
+  color: #4D4B4B;
+}
+
+/*end of jobs section*/
+
+/* section courses */
+.courses {
+	padding: 60px 5%;
+	background-color: #16202F;
+	text-align: center;
+}
+
+/* HEADER */
+.course-header p {
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: #e2e4e9;
+	margin-bottom: 8px;
+	text-transform: uppercase;
+}
+
+.course-header h1 {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 40px;
+	color: #c0d1dd;
+}
+
+/* GRID LAYOUT */
+.course-cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+}
+
+/* CARD */
+.course-card {
+	background-color: #ca9670;
+	color: #fff;
+	border-radius: 12px;
+	padding: 30px 25px;
+	text-align: left;
+	transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+	transform: translateY(-8px);
+}
+
+/* title */
+.course-card h1 {
+  font-family: 'Archivo Black';
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	line-height: 1.4;
+  text-align: center;
+}
+
+/* list */
+.course-card ul {
+  font-family: 'Archivo Narrow';
+	list-style: none;
+	padding: 0;
+	margin: 0 0 25px 0;
+}
+
+.course-card ul li {
+	font-size: 18px;
+  color: #F3F5F7;
+	margin-bottom: 10px;
+	position: relative;
+	padding-left: 16px;
+}
+
+/* button */
+.learn-more-btn {
+  text-decoration: none;
+  color: white;
+	display: inline-block;
+	margin-top: 10px;
+	padding: 8px 14px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.learn-more-btn:hover {
+  background-color: white;
+  color: #16202F;
+}
+
+/* responsive - instagram post taught me how*/ 
+@media (max-width: 900px) {
+	.course-cards {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 600px) {
+	.course-cards {
+		grid-template-columns: 1fr;
+	}
+}
+
+/*end of course section*/
+
+.form-card {
+  background-color: white;
+  border-radius: 20px;
+  max-width: 900px;
+  margin:  50px auto 50px; 
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-header h1 {
+  font-family: 'Archivo Black';
+  color: #212122;
+  font-size: 50px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+.form-header p {
+  font-family: 'Archivo Narrow';
+  color: #6F7D63;
+  text-align: center;
+  margin-top: -25px;
+}
+
+.form-header h2 {
+  font-family: 'Archivo Black';
+  color: #313030;
+  font-size: 20px;
+}
+
+form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+label {display: block;} /*from w3school*/
+
+input[type=text], select {
+  font-family: 'Archivo Narrow';
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=date], select {
+  font-family: 'Archivo Narrow';
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-family: 'Archivo Narrow';
+  width: 50%;
+  background-color: #3C6E71;
+  color: white;
+  padding: 14px;
+  margin: 8px;
+  margin-left: 202px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.upload-box { /*from w3schools*/
+  border-radius: 20px;
+  display: block;
+  width: 600px;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px;
+  border: 3px solid #dcdcdc;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.upload-box:hover { /*change the border colour when mouse hover */
+  border-color: #6aa6a8;
+}
+
+.upload-content {
+  text-align: center;
+}
+
+.upload-content p {
+  margin-top: 12px;
+  font-size: 16px;
+  color: #b0b0b0;
+}
+
+/*end of form section*/
+
+.footer {
+  margin: 0;
+  color: #c2d3d18f;
+  font-size: 50px;
+  padding: 50px;
+  text-align: center;
+  background-image: linear-gradient(to bottom, #212122, #7C7989);
+}
+
+.footer1 p{
+  text-align: center;
+  color: #c2d3d18f;
+  font-size: 25px;
+  margin-top: -50px;
+}
