@@ -47,7 +47,7 @@ body {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 40;
+  width: auto;
   padding: 5px;
   /* From https://css.glass - to make it looks like glass */
   background: rgba(139, 151, 153, 0.34);
@@ -269,6 +269,11 @@ body {
   line-height: 1.5;
   color: #454343;
   margin-bottom: 50px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .team-cards { /**cards layout**/
@@ -637,7 +642,9 @@ input[type=submit] {
   color: white;
   padding: 14px;
   margin: 8px;
-  margin-left: 202px;
+  display: block;
+  margin: 20px auto;
+  width: 100%;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -686,4 +693,8 @@ input[type=submit] {
   color: #c2d3d18f;
   font-size: 25px;
   margin-top: -50px;
+}
+
+@media (max-width: 768px) {
+  /* mobile fixes */
 }
