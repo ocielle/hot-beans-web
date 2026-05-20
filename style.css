@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+{
+  box-sizing: border-box;
+}
+
 body {
   /*change the background and the font*/
   margin: 0;
@@ -10,12 +14,15 @@ body {
   /*automatically change font to archivo*/
 }
 
+
 .home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 120px 100px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 120px 5%;
+ gap: 40px;
 }
+
 
 /*change the font for header only*/
 .hh1 {
@@ -69,6 +76,54 @@ body {
 .navbar a:hover {
   background: #b0bec0;
   color: black;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.logo-text {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px)
+
+.menu-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: block;
+}
+
+.nav-links {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: white;
+  flex-direction: column;
+  display: none;
+}
+
+.nav-links.open {
+  display: flex;
+}
+
+.nav-links a {
+  padding: 15px;
+  border-top: 1px solid #eee;
 }
 
 .left {
@@ -378,11 +433,12 @@ img {
   font-size: 14px;
 }
 
-.subtitle-job { /*job info row*/
-  display: flex;
-  gap: 150px;
-  margin-top: -30px;
-  color: #919090;
+.subtitle-job,
+.job-title {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ gap: 20px;
 }
 
 hr {
@@ -400,14 +456,6 @@ hr {
 
 .key-left { /*left column*/
   flex: 2;
-}
-
-.job-title {
-  font-family: 'Archivo Black';
-  display: flex;
-  gap: 120px;
-  margin-top: 5px;
-  color: #313030;
 }
 
 .title-key {
@@ -653,8 +701,8 @@ input[type=submit] {
 .upload-box { /*from w3schools*/
   border-radius: 20px;
   display: block;
-  width: 600px;
-  max-width: 900px;
+  width: 100%;
+  max-width: 600px;
   margin: 50px auto;
   padding: 40px;
   border: 3px solid #dcdcdc;
@@ -694,5 +742,3 @@ input[type=submit] {
   font-size: 25px;
   margin-top: -50px;
 }
-
-@media (max-width: 768px) {
